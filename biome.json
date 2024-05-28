@@ -27,6 +27,7 @@
     "rules": {
       "all": true,
       "style": {
+        "noNamespace": "off",
         "noDefaultExport": "off",
         "useBlockStatements": "off",
         "useNamingConvention": "off",
