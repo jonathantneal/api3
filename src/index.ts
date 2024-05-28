@@ -1,5 +1,4 @@
 import { Hono } from 'hono'
-import { cache } from 'hono/cache'
 import { logger } from 'hono/logger'
 import { timeout } from 'hono/timeout'
 import { prettyJSON } from 'hono/pretty-json'
@@ -21,7 +20,6 @@ const app = new Hono()
 app.use('*', timeout(3_000))
 app.use(prettyJSON())
 app.use(logger())
-app.get('*', cache({ cacheName: 'evm-api', cacheControl: 'max-age=3600' }))
 
 app.get('/', () => new Response('Hello, World!'))
 
