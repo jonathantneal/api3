@@ -27,12 +27,12 @@
     "forceConsistentCasingInFileNames": true,
     "noPropertyAccessFromIndexSignature": true,
     "types": ["node", "bun", "@cloudflare/workers-types"],
-    // "baseUrl": ".",
+    "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
     }
   },
   "include": ["src", "scripts"],
-  "files": ["reset.d.ts", "biome.json", "environment.d.ts", "sst.config.ts", "sst-env.d.ts"],
+  "files": ["reset.d.ts", "biome.json", "environment.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

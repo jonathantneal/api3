@@ -1,8 +1,12 @@
 {
-  "name": "web3-api",
+  "name": "api3",
   "type": "module",
   "scripts": {
-    "dev": "sst dev"
+    "dev": "wrangler dev --config='wrangler.toml'",
+    "dev:remote": "wrangler dev --config='wrangler.toml' --remote",
+    "format": "biome format . --error-on-warnings --write",
+    "lint": "biome lint . --error-on-warnings --apply-unsafe",
+    "typecheck": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
     "hono": "^4.4.0"
@@ -18,7 +22,6 @@
     "tsup": "^8.0.2",
     "tsx": "^4.11.0",
     "typescript": "^5.4.5",
-    "vite-tsconfig-paths": "^4.3.2",
     "wrangler": "^3.57.2"
   },
   "sideEffects": false,

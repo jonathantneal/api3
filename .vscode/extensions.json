@@ -1,9 +1,9 @@
 {
   "recommendations": [
-    //
-    "mikestead.dotenv",
     "biomejs.biome",
-    "EditorConfig.EditorConfig"
+    "mikestead.dotenv",
+    "EditorConfig.EditorConfig",
+    "github.vscode-github-actions"
   ],
   "unwantedRecommendations": [
     // we use Biome for linting and formatting so we don't need these

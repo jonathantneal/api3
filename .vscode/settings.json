@@ -6,9 +6,9 @@
   "typescript.preferences.preferTypeOnlyAutoImports": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports.biome": "always",
+    "quickfix.biome": "always",
     "source.fixAll.biome": "always",
-    "quickfix.biome": "always"
+    "source.organizeImports.biome": "always"
   },
   "editor.defaultFormatter": "biomejs.biome",
   "[typescript]": {
@@ -26,12 +26,13 @@
   "git.autofetch": true,
   "git.enableCommitSigning": true,
   "search.exclude": {
-    "pnpm-lock.yaml": true,
     "**/node_modules": true
   },
   "files.associations": {
     "biome.json": "jsonc",
     "tsconfig.json": "jsonc",
-    "settings.json": "jsonc"
+    "settings.json": "jsonc",
+    ".dev.vars": "dotenv",
+    ".dev.vars.example": "dotenv"
   }
 }

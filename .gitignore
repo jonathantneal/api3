@@ -177,3 +177,5 @@ dist
 # sst
 .sst
 .wrangler
+_
+.dev.vars

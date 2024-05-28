@@ -1,0 +1,9 @@
+#: schema https://github.com/cloudflare/workers-sdk/files/12887590/wrangler.schema.json
+# https://developers.cloudflare.com/workers/wrangler/configuration
+name = "web3-api"
+main = "./src/index.ts"
+minify = true
+keep_vars = true
+placement = { mode = "smart" }
+compatibility_date = "2024-05-28"
+compatibility_flags = [ "nodejs_compat" ]
