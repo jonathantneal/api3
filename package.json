@@ -1,6 +1,7 @@
 {
   "name": "api3",
   "type": "module",
+  "homepage": "https://api.evm.workers.dev",
   "scripts": {
     "dev": "wrangler --config='wrangler.toml' dev",
     "dev:remote": "wrangler --config='wrangler.toml' dev --remote",
