@@ -46,6 +46,7 @@
         "noUselessEmptyExport": "off"
       },
       "correctness": {
+        "noUnusedVariables": "off",
         "noUndeclaredVariables": "off"
       },
       "suspicious": {
