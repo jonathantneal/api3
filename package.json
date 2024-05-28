@@ -2,8 +2,9 @@
   "name": "api3",
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev --config='wrangler.toml'",
-    "dev:remote": "wrangler dev --config='wrangler.toml' --remote",
+    "dev": "wrangler --config='wrangler.toml' dev",
+    "dev:remote": "wrangler --config='wrangler.toml' dev --remote",
+    "build": "wrangler --config='wrangler.toml' deploy --outdir='dist' --dry-run",
     "format": "biome format . --error-on-warnings --write",
     "lint": "biome lint . --error-on-warnings --apply-unsafe",
     "typecheck": "tsc --project tsconfig.json --noEmit"
@@ -12,7 +13,6 @@
     "hono": "^4.4.0"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.15.3",
     "@biomejs/biome": "^1.7.3",
     "@cloudflare/workers-types": "^4.20240524.0",
     "@total-typescript/ts-reset": "^0.5.1",
@@ -25,6 +25,6 @@
     "wrangler": "^3.57.2"
   },
   "sideEffects": false,
-  "repository": "github:o-az/web3-api",
+  "repository": "github:o-az/api3",
   "author": "o-az (https://github.com/o-az)"
 }
