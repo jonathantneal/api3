@@ -1,6 +1,6 @@
 #: schema https://github.com/cloudflare/workers-sdk/files/12887590/wrangler.schema.json
 # https://developers.cloudflare.com/workers/wrangler/configuration
-name = "web3-api"
+name = "api"
 main = "./src/index.ts"
 minify = true
 keep_vars = true
