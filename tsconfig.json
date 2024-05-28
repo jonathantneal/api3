@@ -1,0 +1,38 @@
+{
+  "schema": "https://json.schemastore.org/tsconfig.json",
+  "display": "Default",
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true,
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "moduleResolution": "Bundler",
+    "noUncheckedIndexedAccess": true,
+    "allowImportingTsExtensions": true,
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "types": ["node", "bun", "@cloudflare/workers-types"],
+    // "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "scripts"],
+  "files": ["reset.d.ts", "biome.json", "environment.d.ts", "sst.config.ts", "sst-env.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}
