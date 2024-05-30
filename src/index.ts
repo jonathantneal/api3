@@ -3,7 +3,7 @@ import { logger } from 'hono/logger'
 import { timeout } from 'hono/timeout'
 import { prettyJSON } from 'hono/pretty-json'
 import { checksumAddress, isAddress } from 'viem'
-import { parseTruthy } from '~/utilities/index.ts'
+import { parseTruthy } from '#utilities/index.ts'
 
 /**
  * @note
@@ -21,7 +21,7 @@ app.use('*', timeout(3_000))
 app.use(prettyJSON())
 app.use(logger())
 
-app.get('/', () => new Response('Hello, World!'))
+app.get('/', () => new Response('OK'))
 
 app.get('/checksum/:address', context => {
   const { address } = context.req.param()
